@@ -1,55 +1,43 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../img/bg.png");
+  background: #2D042C;
   background-repeat: no-repeat;
   color: white; }
 
+#stars img {
+  position: relative;
+  animation: paralax 5s infinite; }
+
 .container {
+  position: absolute;
+  background: url("../img/stars.png");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: 800px;
+  z-index: 100;
+  height: 900px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  animation: paralax;
+  animation-duration: 200s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
 
 .milkyway {
   margin: auto;
   width: 800px;
   height: 200px;
-  background: inherit;
+  background: currentColor;
   border: #6793B5 solid 5px;
-  border-radius: 50%;
-  transform: rotate(20deg); }
+  border-radius: 50%; }
 
-@keyframes rotate-forever {
-  0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
 .innerRing {
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: rotate-forever;
-  -moz-animation-name: rotate-forever;
-  animation-name: rotate-forever;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  animation-timing-function: linear;
-  margin-top: 20px;
-  margin-left: 90px;
   width: 600px;
+  margin: auto;
   height: 150px;
   background: #6793B5;
   border: #6793B5 solid 5px;
@@ -64,7 +52,29 @@ body {
   border: #FFFFFF solid 5px;
   border-radius: 100%; }
 
+@keyframes rotate-forever {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes paralax {
+  from {
+    background-position: 2% 2%; }
+  to {
+    background-position: 1% 100%; } }
 .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 101;
   width: 100%;
   height: 90px;
   opacity: .01;
@@ -72,7 +82,7 @@ body {
   transition: all 0.9s; }
   .navbar:hover {
     opacity: 1;
-    background-color: rgba(255, 255, 255, 0.2); }
+    background-color: rgba(0, 0, 0, 0.2); }
   .navbar li {
     list-style: none;
     float: right;
