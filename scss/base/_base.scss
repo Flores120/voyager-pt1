@@ -9,8 +9,6 @@ body {
 }
 #stars img {
   position: relative;
-  // height: 1190px;
-  animation: paralax 5s infinite;
 }
 .container {
   position: absolute;
@@ -26,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   animation: paralax;
-  animation-duration: 200s;
+  animation-duration: 400s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
