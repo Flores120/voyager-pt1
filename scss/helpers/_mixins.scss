@@ -2,14 +2,3 @@
   0%    { @include transform(rotate(0deg)); }
   100%  { @include transform(rotate(360deg)); }
 }
-@keyframes rotate-forever { @include rotate-forever; }
-
-
-@keyframes paralax {
-  from {
-		background-position: 1% 1%
-	}
-	to {
-		background-position: 100% 100%;
-	}
-}

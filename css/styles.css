@@ -5,63 +5,6 @@ body {
   background-repeat: no-repeat;
   color: white; }
 
-#stars img {
-  position: relative; }
-
-.container {
-  position: absolute;
-  background: url("../img/stars.png");
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 100;
-  height: 1260px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: paralax;
-  animation-duration: 400s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite; }
-
-.milkyway {
-  margin: auto;
-  width: 900px;
-  height: 200px;
-  background: #4A0948;
-  border: #6028a0 solid 5px;
-  border-radius: 50%; }
-
-.innerRing {
-  width: 600px;
-  margin: auto;
-  height: 150px;
-  background: #6028a0;
-  border: #6028a0 solid 5px;
-  border-radius: 50%; }
-
-.sun {
-  margin: auto;
-  margin-top: -20px;
-  width: 150px;
-  height: 150px;
-  background: url("../img/sun.png");
-  border-radius: 100%;
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: rotate-forever;
-  -moz-animation-name: rotate-forever;
-  animation-name: rotate-forever;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  animation-timing-function: linear; }
-
 @keyframes rotate-forever {
   0% {
     -webkit-transform: rotate(0deg);
@@ -80,6 +23,79 @@ body {
     background-position: 1% 1%; }
   to {
     background-position: 100% 100%; } }
+@keyframes fadIn {
+  0% {
+    opacity: 0;
+    zoom: 0; }
+  100% {
+    opacity: 1;
+    zoom: 110%; } }
+.container {
+  position: absolute;
+  background: url("../img/stars.png");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  height: 1260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: paralax;
+  animation-duration: 400s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+#stars img {
+  position: relative; }
+
+.milkyway {
+  margin: auto;
+  width: 900px;
+  height: 200px;
+  background: #4A0948;
+  border: #6028a0 solid 5px;
+  border-radius: 50%; }
+
+.innerRing {
+  width: 600px;
+  margin: auto;
+  height: 150px;
+  background: #6028a0;
+  border: #6028a0 solid 5px;
+  border-radius: 50%; }
+
+.sun, .sun2 {
+  position: relative;
+  margin: auto;
+  margin-top: -20px;
+  width: 150px;
+  height: 150px;
+  background: #f7fc5a;
+  border-radius: 100%;
+  border: solid 10px #fcfecd;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sun #core, .sun2 #core, .sun2 #core2 {
+    width: 60px;
+    height: 60px;
+    background: #fc785a;
+    border-radius: 100%; }
+
+.sun2 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 300px;
+  height: 300px;
+  border: solid 30px #fcfecd; }
+  .sun2 #core2 {
+    width: 150px;
+    height: 150px; }
+
 .navbar {
   position: absolute;
   top: 0;
@@ -92,7 +108,8 @@ body {
   transition: all 0.9s; }
   .navbar:hover {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.2); }
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer; }
   .navbar li {
     list-style: none;
     float: right;

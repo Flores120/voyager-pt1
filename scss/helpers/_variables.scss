@@ -1,0 +1,21 @@
+@keyframes rotate-forever { @include rotate-forever; }
+
+
+@keyframes paralax {
+  from {
+		background-position: 1% 1%
+	}
+	to {
+		background-position: 100% 100%;
+	}
+}
+@keyframes fadIn {
+  0% {
+    opacity: 0;
+    zoom: 0;
+  }
+  100% {
+    opacity: 1;
+    zoom: 110%;
+  }
+}
