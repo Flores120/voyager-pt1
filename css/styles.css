@@ -6,13 +6,6 @@ body {
   color: white;
   font-family: 'Oswald', sans-serif; }
 
-a:hover .sunT {
-  transform: scale(1.5);
-  top: -65px; }
-a:hover .sunB {
-  transform: scale(1.5);
-  bottom: -85px; }
-
 @keyframes paralax {
   from {
     background-position: 4% 1%; }
@@ -27,9 +20,9 @@ a:hover .sunB {
     zoom: 110%; } }
 @keyframes sunshine {
   from {
-    border: solid 50px #fcfecd; }
+    border: solid 10px #fcfecd; }
   to {
-    border: solid 100px #ffffff; } }
+    border: solid 20px #ffffff; } }
 @keyframes popup {
   from {
     opacity: 0; }
@@ -63,7 +56,14 @@ a:hover .sunB {
   height: 200px;
   background: transparent;
   border: #ffcccc solid 4px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  transition: all 2s; }
+  @media (max-width: 800px) {
+    .milkyway {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      height: 500px; } }
 
 .ring {
   position: relative;
@@ -74,6 +74,11 @@ a:hover .sunB {
   background: transparent;
   border: #ffcccc solid 4px;
   border-radius: 50%; }
+  @media (max-width: 800px) {
+    .ring {
+      width: 400px;
+      height: 400px;
+      margin-top: 50px; } }
 
 .ring2 {
   position: relative;
@@ -84,6 +89,11 @@ a:hover .sunB {
   background: transparent;
   border: #ffcccc solid 4px;
   border-radius: 50%; }
+  @media (max-width: 800px) {
+    .ring2 {
+      width: 300px;
+      height: 300px;
+      margin-top: 50px; } }
 
 .ring3 {
   position: relative;
@@ -94,10 +104,15 @@ a:hover .sunB {
   background: transparent;
   border: #ffcccc solid 4px;
   border-radius: 50%; }
+  @media (max-width: 800px) {
+    .ring3 {
+      width: 200px;
+      height: 200px;
+      margin-top: 50px; } }
 
 .sunT {
   position: absolute;
-  top: -40px;
+  top: -45px;
   left: 150px;
   margin: auto;
   margin-top: -50px;
@@ -105,6 +120,12 @@ a:hover .sunB {
   height: 100px;
   background: #ffff33;
   border-radius: 100px 100px 0 0; }
+  @media (max-width: 800px) {
+    .sunT {
+      width: 70px;
+      height: 35px;
+      top: 113px;
+      left: 60px; } }
 
 .sunB {
   position: absolute;
@@ -117,15 +138,27 @@ a:hover .sunB {
   height: 100px;
   background: #ffff33;
   border-radius: 0 0 100px 100px; }
+  @media (max-width: 800px) {
+    .sunB {
+      width: 70px;
+      height: 35px;
+      bottom: 60px;
+      left: 60px; } }
 
 #core {
   position: absolute;
-  top: -15px;
+  top: -20px;
   left: 220px;
   width: 60px;
   height: 60px;
   background: #fc785a;
   border-radius: 100%; }
+  @media (max-width: 800px) {
+    #core {
+      width: 15px;
+      height: 15px;
+      top: 90px;
+      left: 87px; } }
 
 .earth {
   position: absolute;
@@ -137,7 +170,8 @@ a:hover .sunB {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue; }
+  background: blue;
+  box-shadow: inset 5px -1px rgba(0, 0, 0, 0.4); }
 
 .jupiter {
   position: absolute;
@@ -145,6 +179,7 @@ a:hover .sunB {
   top: 17px;
   width: 40px;
   height: 40px;
+  box-shadow: inset 5px -1px rgba(0, 0, 0, 0.4);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -181,7 +216,8 @@ a:hover .sunB {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #ffcc99; }
+    background: #ffcc99;
+    box-shadow: inset 5px -1px rgba(0, 0, 0, 0.4); }
 
 .sun2 {
   position: relative;
@@ -194,21 +230,31 @@ a:hover .sunB {
   -webkit-animation-duration: 4s;
   -moz-animation-duration: 4s;
   animation-duration: 4s;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s; }
+  @media (max-width: 800px) {
+    .sun2 {
+      width: 350px;
+      height: 350px; } }
   .sun2 #core2 {
     width: 200px;
     height: 200px;
     background: #fc785a;
-    border-radius: 100%; }
+    border-radius: 100%;
+    transition: all 2s; }
+    @media (max-width: 800px) {
+      .sun2 #core2 {
+        width: 80px;
+        height: 80px; } }
 
 .info {
   position: absolute;
@@ -220,7 +266,14 @@ a:hover .sunB {
   animation: fadeIn;
   animation-name: popup;
   animation-duration: 7s;
-  transition-timing-function: ease-in; }
+  transition-timing-function: ease-in;
+  transition: all 2s; }
+  @media (max-width: 800px) {
+    .info {
+      top: 60%;
+      width: 80%; }
+      .info h2 {
+        font-size: 20px; } }
 
 .navbar {
   position: absolute;

@@ -7,16 +7,27 @@
   border: solid 50px #fcfecd;
   animation: sunshine;
   @include animation-duration($speed);
-  @include planet;
   @include animation-timing-function(linear);
   @include animation-iteration-count(infinite);
+  @include planet;
+  transition: all 2s;
+  @media #{$brk-narrow}{
+    width: 350px;
+    height: 350px;
+  }
   #core2 {
     width: 200px;
     height: 200px;
     background: #fc785a;
     border-radius: 100%;
+    transition: all 2s;
+    @media #{$brk-narrow}{
+      width: 80px;
+      height: 80px;
+    }
   }
 }
+
 .info {
   position: absolute;
   top: 70%;
@@ -28,4 +39,12 @@
   animation-name: popup;
   animation-duration: 7s;
   transition-timing-function: ease-in;
+  transition: all 2s;
+  @media #{$brk-narrow}{
+    top: 60%;
+    width: 80%;
+    h2 {
+      font-size: 20px;
+    }
+  }
 }

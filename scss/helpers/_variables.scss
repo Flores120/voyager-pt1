@@ -1,3 +1,6 @@
+$brk-narrow: '(max-width: 800px)';
+$brk-medium: '(min-width: 980px)';
+$brk-wide: '(min-width: 1300px)';
 
 @keyframes paralax {
   from {
@@ -18,8 +21,8 @@
   }
 }
 @keyframes sunshine {
-  from {border: solid 50px #fcfecd;}
-  to {border: solid 100px #ffffff;}
+  from {border: solid 10px #fcfecd;}
+  to {border: solid 20px #ffffff;}
 }
 @keyframes popup {
   from {opacity: 0}

@@ -29,7 +29,13 @@
 	background: rgba(0, 0 ,0, 0);
   border: #ffcccc solid 4px;
   border-radius: 50%;
-
+  transition: all 2s;
+  @media #{$brk-narrow}{
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      height: 500px;
+    }
 }
 .ring {
   position: relative;
@@ -40,6 +46,11 @@
   background: rgba(0, 0 ,0, 0);
   border: #ffcccc solid 4px;
   border-radius: 50%;
+  @media #{$brk-narrow}{
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    }
 }
 .ring2 {
   position: relative;
@@ -50,6 +61,11 @@
   background: rgba(0, 0 ,0, 0);
   border: #ffcccc solid 4px;
   border-radius: 50%;
+  @media #{$brk-narrow}{
+      width: 300px;
+      height: 300px;
+      margin-top: 50px;
+    }
 }
 .ring3 {
   position: relative;
@@ -60,10 +76,15 @@
   background: rgba(0, 0 ,0, 0);
   border: #ffcccc solid 4px;
   border-radius: 50%;
+  @media #{$brk-narrow}{
+      width: 200px;
+      height: 200px;
+      margin-top: 50px;
+    }
 }
 .sunT{
   position: absolute;
-  top: -40px;
+  top: -45px;
   left: 150px;
   margin: auto;
   margin-top: -50px;
@@ -71,6 +92,12 @@
 	height: 100px;
 	background: #ffff33;
   border-radius: 100px 100px 0 0;
+  @media #{$brk-narrow}{
+      width: 70px;
+    	height: 35px;
+      top: 113px;
+      left: 60px;
+    }
 }
 .sunB{
   position: absolute;
@@ -83,15 +110,27 @@
 	height: 100px;
 	background: #ffff33;
   border-radius:  0 0 100px 100px;
+  @media #{$brk-narrow}{
+      width: 70px;
+    	height: 35px;
+      bottom: 60px;
+      left: 60px;
+    }
 }
 #core {
   position: absolute;
-  top: -15px;
+  top: -20px;
   left: 220px;
   width: 60px;
   height: 60px;
   background: #fc785a;
   border-radius: 100%;
+  @media #{$brk-narrow}{
+      width: 15px;
+    	height: 15px;
+      top: 90px;
+      left: 87px;
+    }
 }
 .earth {
   position: absolute;
@@ -101,6 +140,7 @@
   height: 20px;
   @include planet;
   background: blue;
+  @include shadow;
 }
 .jupiter {
   position: absolute;
@@ -108,6 +148,7 @@
   top: 17px;
   width: 40px;
   height: 40px;
+  @include shadow;
   @include planet;
   background: #ffaa80;
   @include animation-duration($speed);
@@ -125,7 +166,6 @@
   background: rgba(0, 0 ,0, 0);
   border: #ffffff solid 4px;
   border-radius: 50%;
-
   #saturn {
     position: absolute;
     left: 5px;
@@ -134,5 +174,6 @@
     height: 30px;
     @include planet;
     background: #ffcc99;
+    @include shadow;
   }
 }
