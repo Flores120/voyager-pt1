@@ -1,0 +1,17 @@
+.button button {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.9s;
+  height: 60px;
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  outline: none;
+  &:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    color: red;
+  }
+}

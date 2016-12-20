@@ -3,26 +3,25 @@ body {
   padding: 0;
   background: #2D042C;
   background-repeat: no-repeat;
-  color: white; }
+  color: white;
+  font-family: 'Oswald', sans-serif; }
 
 @keyframes rotate-forever {
   0% {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
+  25% {
+    -webkit-transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(0.75); }
+  50% {
+    -webkit-transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(0.6); }
+  75% {
+    -webkit-transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(0.75); }
   100% {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); } }
 @keyframes paralax {
   from {
-    background-position: 1% 1%; }
+    background-position: 4% 1%; }
   to {
-    background-position: 100% 100%; } }
+    background-position: 800% 300%; } }
 @keyframes fadIn {
   0% {
     opacity: 0;
@@ -30,6 +29,16 @@ body {
   100% {
     opacity: 1;
     zoom: 110%; } }
+@keyframes sunshine {
+  from {
+    border: solid 50px #fcfecd; }
+  to {
+    border: solid 100px #ffffff; } }
+@keyframes popup {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 .container {
   position: absolute;
   background: url("../img/stars.png");
@@ -53,7 +62,7 @@ body {
 
 .milkyway {
   margin: auto;
-  width: 900px;
+  width: 1000px;
   height: 200px;
   background: #4A0948;
   border: #6028a0 solid 5px;
@@ -70,12 +79,12 @@ body {
 .sun, .sun2 {
   position: relative;
   margin: auto;
-  margin-top: -20px;
+  margin-top: -50px;
   width: 150px;
   height: 150px;
   background: #f7fc5a;
-  border-radius: 100%;
   border: solid 10px #fcfecd;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -86,15 +95,31 @@ body {
     border-radius: 100%; }
 
 .sun2 {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  width: 300px;
-  height: 300px;
-  border: solid 30px #fcfecd; }
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  border: solid 50px #fcfecd;
+  animation-name: sunshine;
+  animation-duration: 2s;
+  transition-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
   .sun2 #core2 {
-    width: 150px;
-    height: 150px; }
+    width: 300px;
+    height: 300px; }
+
+.info {
+  position: absolute;
+  top: 70%;
+  width: 50%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  animation: fadeIn;
+  animation-name: popup;
+  animation-duration: 7s;
+  transition-timing-function: ease-in; }
 
 .navbar {
   position: absolute;
@@ -118,7 +143,10 @@ body {
     font-size: 20px; }
   .navbar a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    transition: all 0.9s; }
+    .navbar a:hover {
+      color: red; }
   .navbar #logo {
     float: left;
     margin-left: 20px;
@@ -126,5 +154,21 @@ body {
     height: auto; }
     .navbar #logo img {
       width: 60%; }
+
+.button button {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.9s;
+  height: 60px;
+  width: 100px;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  outline: none; }
+  .button button:hover {
+    opacity: 1;
+    background-color: white;
+    cursor: pointer;
+    color: red; }
 
 /*# sourceMappingURL=styles.css.map */

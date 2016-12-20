@@ -3,10 +3,10 @@
 
 @keyframes paralax {
   from {
-		background-position: 1% 1%
+		background-position: 4% 1%
 	}
 	to {
-		background-position: 100% 100%;
+		background-position: 800% 300%;
 	}
 }
 @keyframes fadIn {
@@ -18,4 +18,12 @@
     opacity: 1;
     zoom: 110%;
   }
+}
+@keyframes sunshine {
+  from {border: solid 50px #fcfecd;}
+  to {border: solid 100px #ffffff;}
+}
+@keyframes popup {
+  from {opacity: 0}
+  to {opacity: 1}
 }

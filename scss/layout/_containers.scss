@@ -23,7 +23,7 @@
 
 .milkyway {
   margin: auto;
-  width: 900px;
+  width: 1000px;
 	height: 200px;
 	background: #4A0948;
   border: #6028a0 solid 5px;
@@ -41,15 +41,12 @@
 .sun {
   position: relative;
   margin: auto;
-  margin-top: -20px;
+  margin-top: -50px;
   width: 150px;
 	height: 150px;
 	background: #f7fc5a;
-  border-radius: 100%;
   border: solid 10px #fcfecd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include planet;
   #core {
     width: 60px;
   	height: 60px;

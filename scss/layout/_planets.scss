@@ -1,14 +1,28 @@
 .sun2 {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  width: 300px;
-  height: 300px;
-  border: solid 30px #fcfecd;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  border: solid 50px #fcfecd;
+  animation-name: sunshine;
+  animation-duration: 2s;
+  transition-timing-function: ease;
+  @include animation-iteration-count(infinite);
   @extend .sun;
   #core2 {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     @extend #core;
   }
+}
+.info {
+  position: absolute;
+  top: 70%;
+  width: 50%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  animation: fadeIn;
+  animation-name: popup;
+  animation-duration: 7s;
+  transition-timing-function: ease-in;
 }

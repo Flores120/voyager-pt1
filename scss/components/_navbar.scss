@@ -24,6 +24,10 @@
   a {
     text-decoration: none;
     color: white;
+    transition: all 0.9s;
+    &:hover {
+      color: red;
+    }
   }
   #logo {
     float: left;
