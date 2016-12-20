@@ -1,17 +1,20 @@
 .sun2 {
+  position: relative;
   margin: auto;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  background: #ffff33;
   border: solid 50px #fcfecd;
-  animation-name: sunshine;
-  animation-duration: 2s;
-  transition-timing-function: ease;
+  animation: sunshine;
+  @include animation-duration($speed);
+  @include planet;
+  @include animation-timing-function(linear);
   @include animation-iteration-count(infinite);
-  @extend .sun;
   #core2 {
-    width: 300px;
-    height: 300px;
-    @extend #core;
+    width: 200px;
+    height: 200px;
+    background: #fc785a;
+    border-radius: 100%;
   }
 }
 .info {

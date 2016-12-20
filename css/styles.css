@@ -6,17 +6,6 @@ body {
   color: white;
   font-family: 'Oswald', sans-serif; }
 
-@keyframes rotate-forever {
-  0% {
-    -webkit-transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
-  25% {
-    -webkit-transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(0.75); }
-  50% {
-    -webkit-transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(0.6); }
-  75% {
-    -webkit-transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(0.75); }
-  100% {
-    -webkit-transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); } }
 @keyframes paralax {
   from {
     background-position: 4% 1%; }
@@ -47,7 +36,7 @@ body {
   right: 0;
   bottom: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   height: 1260px;
   display: flex;
   justify-content: center;
@@ -61,53 +50,158 @@ body {
   position: relative; }
 
 .milkyway {
+  position: relative;
   margin: auto;
   width: 1000px;
   height: 200px;
-  background: #4A0948;
-  border: #6028a0 solid 5px;
+  background: transparent;
+  border: #ffcccc solid 4px;
   border-radius: 50%; }
 
-.innerRing {
+.ring {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  margin-top: 17px;
+  height: 150px;
+  background: transparent;
+  border: #ffcccc solid 4px;
+  border-radius: 50%; }
+
+.ring2 {
+  position: relative;
   width: 600px;
   margin: auto;
-  height: 150px;
-  background: #6028a0;
-  border: #6028a0 solid 5px;
+  margin-top: 17px;
+  height: 100px;
+  background: transparent;
+  border: #ffcccc solid 4px;
   border-radius: 50%; }
 
-.sun, .sun2 {
+.ring3 {
   position: relative;
+  width: 500px;
+  margin: auto;
+  margin-top: 17px;
+  height: 50px;
+  background: transparent;
+  border: #ffcccc solid 4px;
+  border-radius: 50%; }
+
+.sunT {
+  position: absolute;
+  top: -40px;
+  left: 150px;
   margin: auto;
   margin-top: -50px;
-  width: 150px;
-  height: 150px;
-  background: #f7fc5a;
-  border: solid 10px #fcfecd;
+  width: 200px;
+  height: 100px;
+  background: #ffff33;
+  border-radius: 100px 100px 0 0; }
+
+.sunB {
+  position: absolute;
+  bottom: -60px;
+  left: 150px;
+  z-index: -1;
+  margin: auto;
+  margin-top: -50px;
+  width: 200px;
+  height: 100px;
+  background: #ffff33;
+  border-radius: 0 0 100px 100px; }
+
+#core {
+  position: absolute;
+  top: -15px;
+  left: 220px;
+  width: 60px;
+  height: 60px;
+  background: #fc785a;
+  border-radius: 100%; }
+
+.earth {
+  position: absolute;
+  left: -10px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .sun #core, .sun2 #core, .sun2 #core2 {
-    width: 60px;
-    height: 60px;
-    background: #fc785a;
-    border-radius: 100%; }
+  align-items: center;
+  background: blue; }
+
+.jupiter {
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffaa80;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.saturnRing {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 40px;
+  height: 10px;
+  transform: rotate(20deg);
+  background: transparent;
+  border: #ffffff solid 4px;
+  border-radius: 50%; }
+  .saturnRing #saturn {
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffcc99; }
 
 .sun2 {
+  position: relative;
   margin: auto;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  background: #ffff33;
   border: solid 50px #fcfecd;
-  animation-name: sunshine;
-  animation-duration: 2s;
-  transition-timing-function: ease;
+  animation: sunshine;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  animation-duration: 4s;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
   .sun2 #core2 {
-    width: 300px;
-    height: 300px; }
+    width: 200px;
+    height: 200px;
+    background: #fc785a;
+    border-radius: 100%; }
 
 .info {
   position: absolute;

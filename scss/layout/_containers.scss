@@ -6,7 +6,7 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   height: 1260px;
   display: flex;
   justify-content: center;
@@ -22,35 +22,117 @@
 }
 
 .milkyway {
+  position: relative;
   margin: auto;
   width: 1000px;
 	height: 200px;
-	background: #4A0948;
-  border: #6028a0 solid 5px;
+	background: rgba(0, 0 ,0, 0);
+  border: #ffcccc solid 4px;
   border-radius: 50%;
 
 }
-.innerRing {
-  width: 600px;
+.ring {
+  position: relative;
+  width: 800px;
   margin: auto;
+  margin-top: 17px;
 	height: 150px;
-	background: #6028a0;
-  border: #6028a0 solid 5px;
+  background: rgba(0, 0 ,0, 0);
+  border: #ffcccc solid 4px;
   border-radius: 50%;
 }
-.sun {
+.ring2 {
   position: relative;
+  width: 600px;
+  margin: auto;
+  margin-top: 17px;
+	height: 100px;
+  background: rgba(0, 0 ,0, 0);
+  border: #ffcccc solid 4px;
+  border-radius: 50%;
+}
+.ring3 {
+  position: relative;
+  width: 500px;
+  margin: auto;
+  margin-top: 17px;
+	height: 50px;
+  background: rgba(0, 0 ,0, 0);
+  border: #ffcccc solid 4px;
+  border-radius: 50%;
+}
+.sunT{
+  position: absolute;
+  top: -40px;
+  left: 150px;
   margin: auto;
   margin-top: -50px;
-  width: 150px;
-	height: 150px;
-	background: #f7fc5a;
-  border: solid 10px #fcfecd;
+  width: 200px;
+	height: 100px;
+	background: #ffff33;
+  border-radius: 100px 100px 0 0;
+}
+.sunB{
+  position: absolute;
+  bottom: -60px;
+  left: 150px;
+  z-index: -1;
+  margin: auto;
+  margin-top: -50px;
+  width: 200px;
+	height: 100px;
+	background: #ffff33;
+  border-radius:  0 0 100px 100px;
+}
+#core {
+  position: absolute;
+  top: -15px;
+  left: 220px;
+  width: 60px;
+  height: 60px;
+  background: #fc785a;
+  border-radius: 100%;
+}
+.earth {
+  position: absolute;
+  left: -10px;
+  top: 14px;
+  width: 20px;
+  height: 20px;
   @include planet;
-  #core {
-    width: 60px;
-  	height: 60px;
-  	background: #fc785a;
-    border-radius: 100%;
+  background: blue;
+}
+.jupiter {
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  width: 40px;
+  height: 40px;
+  @include planet;
+  background: #ffaa80;
+  @include animation-duration($speed);
+  @include animation-iteration-count(infinite);
+  animation-name: rotate;
+  @include animation-timing-function(linear);
+}
+.saturnRing {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 40px;
+  height: 10px;
+  transform: rotate(20deg);
+  background: rgba(0, 0 ,0, 0);
+  border: #ffffff solid 4px;
+  border-radius: 50%;
+
+  #saturn {
+    position: absolute;
+    left: 5px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    @include planet;
+    background: #ffcc99;
   }
 }
