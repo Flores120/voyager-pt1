@@ -221,6 +221,7 @@ body {
 
 .sun2 {
   position: relative;
+  display: inline;
   margin: auto;
   width: 600px;
   height: 600px;
@@ -246,6 +247,7 @@ body {
       width: 350px;
       height: 350px; } }
   .sun2 #core2 {
+    display: block;
     width: 200px;
     height: 200px;
     background: #fc785a;

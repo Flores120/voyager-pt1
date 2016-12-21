@@ -1,5 +1,7 @@
+
 .sun2 {
   position: relative;
+  display:inline;
   margin: auto;
   width: 600px;
   height: 600px;
@@ -16,6 +18,7 @@
     height: 350px;
   }
   #core2 {
+    display: block;
     width: 200px;
     height: 200px;
     background: #fc785a;
