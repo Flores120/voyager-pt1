@@ -28,6 +28,17 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes orbit {
+  0% {
+    -webkit-transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
+  25% {
+    -webkit-transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(0.75); }
+  50% {
+    -webkit-transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(0.6); }
+  75% {
+    -webkit-transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(0.75); }
+  100% {
+    -webkit-transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); } }
 .container {
   position: absolute;
   background: url("../img/stars.png");
@@ -37,7 +48,7 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 1;
-  height: 1260px;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,6 +246,15 @@ body {
         top: -14px;
         left: 1px; } }
 
+@media (max-width: 900px) {
+  .stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 90px; } }
+
 .sun2 {
   position: relative;
   display: inline;
@@ -274,24 +294,121 @@ body {
         width: 80px;
         height: 80px; } }
 
+#jupiter, #earth, #mercury, #venus, #mars, #uranus {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #ffaa80;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s; }
+  @media (max-width: 900px) {
+    #jupiter, #earth, #mercury, #venus, #mars, #uranus {
+      width: 100px;
+      height: 100px;
+      margin: 25px; } }
+
+#earth, #mercury, #venus, #mars, #uranus {
+  background: #1B2336;
+  height: 50px;
+  width: 50px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #earth, #mercury, #venus, #mars, #uranus {
+      width: 30px;
+      height: 30px;
+      margin: 25px; } }
+
+#mercury, #venus, #mars, #uranus {
+  background: #656565;
+  height: 40px;
+  width: 40px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #mercury, #venus, #mars, #uranus {
+      width: 20px;
+      height: 20px;
+      margin: 25px; } }
+
+#venus {
+  background: #D1933C;
+  height: 40px;
+  width: 40px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #venus {
+      width: 20px;
+      height: 20px;
+      margin: 25px; } }
+
+#mars {
+  background: #AB6D46;
+  height: 40px;
+  width: 40px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #mars {
+      width: 20px;
+      height: 20px;
+      margin: 25px; } }
+
+.saturn {
+  position: relative; }
+  @media (max-width: 900px) {
+    .saturn img {
+      width: 80px;
+      height: 80px;
+      margin: 25px; } }
+
+#uranus {
+  background: #CDF3F6;
+  height: 50px;
+  width: 50px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #uranus {
+      width: 25px;
+      height: 25px;
+      margin: 25px; } }
+
+#uranus {
+  background: #3C57DA;
+  height: 35px;
+  width: 35px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #uranus {
+      width: 15px;
+      height: 15px;
+      margin: 25px; } }
+
 .info {
   position: absolute;
+  display: none;
   top: 70%;
   width: 50%;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
-  animation: fadeIn;
-  animation-name: popup;
-  animation-duration: 7s;
-  transition-timing-function: ease-in;
   transition: all 2s; }
   @media (max-width: 900px) {
     .info {
-      top: 60%;
-      width: 80%; }
+      position: static;
+      width: 100%; }
       .info h2 {
-        font-size: 20px; } }
+        font-size: 16px; } }
+
+.planet:hover .info {
+  display: block;
+  animation: fadeIn;
+  animation-name: popup;
+  animation-duration: 7s;
+  transition-timing-function: ease-in; }
 
 .navbar {
   position: absolute;
@@ -318,7 +435,7 @@ body {
     color: white;
     transition: all 0.9s; }
     .navbar a:hover {
-      color: red; }
+      color: #f4424b; }
   .navbar #logo {
     float: left;
     margin-left: 20px;
@@ -341,6 +458,6 @@ body {
     opacity: 1;
     background-color: white;
     cursor: pointer;
-    color: red; }
+    color: #f4424b; }
 
 /*# sourceMappingURL=styles.css.map */

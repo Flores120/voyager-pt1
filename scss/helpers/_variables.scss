@@ -1,6 +1,7 @@
 $brk-narrow: '(max-width: 900px)';
 $brk-medium: '(min-width: 980px)';
 $brk-wide: '(min-width: 1300px)';
+$speed: 4s;
 
 @keyframes paralax {
   from {
@@ -27,4 +28,11 @@ $brk-wide: '(min-width: 1300px)';
 @keyframes popup {
   from {opacity: 0}
   to {opacity: 1}
+}
+@keyframes orbit {
+  0%  { -webkit-transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
+ 25%  { -webkit-transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(.75); }
+ 50%  { -webkit-transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(.60); }
+ 75%  { -webkit-transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(.75); }
+ 100%  { -webkit-transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); }
 }

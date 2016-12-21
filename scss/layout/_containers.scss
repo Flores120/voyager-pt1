@@ -7,7 +7,7 @@
   bottom: 0;
   width: 100%;
   z-index: 1;
-  height: 1260px;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,7 +140,7 @@
   height: 20px;
   @include planet;
   background: blue;
-  @include shadow;
+  @include leftshadow;
   @media #{$brk-narrow}{
     top: 83px;
     left: -11px;
@@ -152,7 +152,7 @@
   top: 17px;
   width: 40px;
   height: 40px;
-  @include shadow;
+  @include leftshadow;
   @include planet;
   background: #ffaa80;
   @include animation-duration($speed);
@@ -186,7 +186,7 @@
     height: 30px;
     @include planet;
     background: #ffcc99;
-    @include shadow;
+    @include leftshadow;
     @media #{$brk-narrow}{
       top: -14px;
       left: 1px;

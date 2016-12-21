@@ -4,6 +4,9 @@
    justify-content: center;
    align-items: center;
  }
-@mixin shadow {
+@mixin leftshadow {
   box-shadow: inset 5px -1px rgba(0,0,0,0.4);
+}
+@mixin rightshadow {
+  box-shadow: inset -5px -1px rgba(0,0,0,0.4);
 }

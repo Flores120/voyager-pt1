@@ -1,4 +1,13 @@
-
+.stars {
+  @media #{$brk-narrow}{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      justify-content: flex-start;
+      align-content: center;
+      margin-top: 90px;
+    }
+}
 .sun2 {
   position: relative;
   display:inline;
@@ -16,6 +25,7 @@
   @media #{$brk-narrow}{
     width: 350px;
     height: 350px;
+    // margin: 10px;
   }
   #core2 {
     display: block;
@@ -30,24 +40,134 @@
     }
   }
 }
+#jupiter {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #ffaa80;
+  margin-left: 10px;
+    margin-right: 10px;
+  @include rightshadow;
+  @include planet;
+  transition: all 2s;
+  @media #{$brk-narrow}{
+    width: 100px;
+    height: 100px;
+    margin: 25px;
 
+  }
+}
+#earth {
+  @extend #jupiter;
+  background: #1B2336;
+  height: 50px;
+  width: 50px;
+  @include rightshadow;
+  @media #{$brk-narrow}{
+    width: 30px;
+    height: 30px;
+    margin: 25px;
+
+  }
+}
+#mercury {
+  @extend #earth;
+  background: #656565;
+  height: 40px;
+  width: 40px;
+  @include rightshadow;
+  @media #{$brk-narrow}{
+    width: 20px;
+    height: 20px;
+    margin: 25px;
+  }
+}
+#venus {
+  @extend #mercury;
+  background: #D1933C;
+  height: 40px;
+  width: 40px;
+  @include rightshadow;
+  @media #{$brk-narrow}{
+    width: 20px;
+    height: 20px;
+    margin: 25px;
+
+  }
+}
+#mars {
+  @extend #mercury;
+  background: #AB6D46;
+  height: 40px;
+  width: 40px;
+  @include rightshadow;
+  @media #{$brk-narrow}{
+    width: 20px;
+    height: 20px;
+    margin: 25px;
+
+  }
+}
+.saturn {
+  position: relative;
+  @media #{$brk-narrow}{
+    img {
+      width: 80px;
+      height: 80px;
+      margin: 25px;
+
+    }
+  }
+}
+#uranus {
+  @extend #mercury;
+  background: #CDF3F6;
+  height: 50px;
+  width: 50px;
+  @include rightshadow;
+  @media #{$brk-narrow}{
+    width: 25px;
+    height: 25px;
+    margin: 25px;
+
+  }
+}
+#uranus {
+  @extend #mercury;
+  background: #3C57DA;
+  height: 35px;
+  width: 35px;
+  @include rightshadow;
+  @media #{$brk-narrow}{
+    width: 15px;
+    height: 15px;
+    margin: 25px;
+
+  }
+}
 .info {
   position: absolute;
+  display: none;
   top: 70%;
   width: 50%;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
+  transition: all 2s;
+  @media #{$brk-narrow}{
+    position: static;
+    width: 100%;
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+.planet:hover {
+  .info {
+    display: block;
   animation: fadeIn;
   animation-name: popup;
   animation-duration: 7s;
   transition-timing-function: ease-in;
-  transition: all 2s;
-  @media #{$brk-narrow}{
-    top: 60%;
-    width: 80%;
-    h2 {
-      font-size: 20px;
-    }
-  }
+ }
 }
