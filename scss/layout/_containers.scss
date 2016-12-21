@@ -27,7 +27,7 @@
   width: 1000px;
 	height: 200px;
 	background: rgba(0, 0 ,0, 0);
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%;
   transition: all 2s;
   @media #{$brk-narrow}{
@@ -44,7 +44,7 @@
   margin-top: 17px;
 	height: 150px;
   background: rgba(0, 0 ,0, 0);
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%;
   @media #{$brk-narrow}{
     width: 400px;
@@ -59,7 +59,7 @@
   margin-top: 17px;
 	height: 100px;
   background: rgba(0, 0 ,0, 0);
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%;
   @media #{$brk-narrow}{
       width: 300px;
@@ -74,7 +74,7 @@
   margin-top: 17px;
 	height: 50px;
   background: rgba(0, 0 ,0, 0);
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%;
   @media #{$brk-narrow}{
       width: 200px;
@@ -95,7 +95,7 @@
   @media #{$brk-narrow}{
       width: 70px;
     	height: 35px;
-      top: 113px;
+      top: 114px;
       left: 60px;
     }
 }
@@ -141,6 +141,10 @@
   @include planet;
   background: blue;
   @include shadow;
+  @media #{$brk-narrow}{
+    top: 83px;
+    left: -11px;
+    }
 }
 .jupiter {
   position: absolute;
@@ -155,6 +159,10 @@
   @include animation-iteration-count(infinite);
   animation-name: rotate;
   @include animation-timing-function(linear);
+  @media #{$brk-narrow}{
+    top: 20px;
+    left: -19px;
+    }
 }
 .saturnRing {
   position: absolute;
@@ -166,6 +174,10 @@
   background: rgba(0, 0 ,0, 0);
   border: #ffffff solid 4px;
   border-radius: 50%;
+  @media #{$brk-narrow}{
+    top: 11px;
+    left: 100px;
+    }
   #saturn {
     position: absolute;
     left: 5px;
@@ -175,5 +187,9 @@
     @include planet;
     background: #ffcc99;
     @include shadow;
+    @media #{$brk-narrow}{
+      top: -14px;
+      left: 1px;
+      }
   }
 }

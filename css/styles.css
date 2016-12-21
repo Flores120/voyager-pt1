@@ -55,10 +55,10 @@ body {
   width: 1000px;
   height: 200px;
   background: transparent;
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%;
   transition: all 2s; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .milkyway {
       display: flex;
       justify-content: center;
@@ -72,9 +72,9 @@ body {
   margin-top: 17px;
   height: 150px;
   background: transparent;
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .ring {
       width: 400px;
       height: 400px;
@@ -87,9 +87,9 @@ body {
   margin-top: 17px;
   height: 100px;
   background: transparent;
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .ring2 {
       width: 300px;
       height: 300px;
@@ -102,9 +102,9 @@ body {
   margin-top: 17px;
   height: 50px;
   background: transparent;
-  border: #ffcccc solid 4px;
+  border: #ffcccc solid 3px;
   border-radius: 50%; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .ring3 {
       width: 200px;
       height: 200px;
@@ -120,11 +120,11 @@ body {
   height: 100px;
   background: #ffff33;
   border-radius: 100px 100px 0 0; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .sunT {
       width: 70px;
       height: 35px;
-      top: 113px;
+      top: 114px;
       left: 60px; } }
 
 .sunB {
@@ -138,7 +138,7 @@ body {
   height: 100px;
   background: #ffff33;
   border-radius: 0 0 100px 100px; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .sunB {
       width: 70px;
       height: 35px;
@@ -153,7 +153,7 @@ body {
   height: 60px;
   background: #fc785a;
   border-radius: 100%; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     #core {
       width: 15px;
       height: 15px;
@@ -172,6 +172,10 @@ body {
   align-items: center;
   background: blue;
   box-shadow: inset 5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    .earth {
+      top: 83px;
+      left: -11px; } }
 
 .jupiter {
   position: absolute;
@@ -195,6 +199,10 @@ body {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear; }
+  @media (max-width: 900px) {
+    .jupiter {
+      top: 20px;
+      left: -19px; } }
 
 .saturnRing {
   position: absolute;
@@ -206,6 +214,10 @@ body {
   background: transparent;
   border: #ffffff solid 4px;
   border-radius: 50%; }
+  @media (max-width: 900px) {
+    .saturnRing {
+      top: 11px;
+      left: 100px; } }
   .saturnRing #saturn {
     position: absolute;
     left: 5px;
@@ -218,6 +230,10 @@ body {
     align-items: center;
     background: #ffcc99;
     box-shadow: inset 5px -1px rgba(0, 0, 0, 0.4); }
+    @media (max-width: 900px) {
+      .saturnRing #saturn {
+        top: -14px;
+        left: 1px; } }
 
 .sun2 {
   position: relative;
@@ -242,7 +258,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 2s; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .sun2 {
       width: 350px;
       height: 350px; } }
@@ -253,7 +269,7 @@ body {
     background: #fc785a;
     border-radius: 100%;
     transition: all 2s; }
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
       .sun2 #core2 {
         width: 80px;
         height: 80px; } }
@@ -270,7 +286,7 @@ body {
   animation-duration: 7s;
   transition-timing-function: ease-in;
   transition: all 2s; }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .info {
       top: 60%;
       width: 80%; }
