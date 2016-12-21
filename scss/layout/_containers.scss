@@ -17,8 +17,10 @@
   animation-iteration-count: infinite;
 }
 
-#stars img {
+#stars  {
   position: relative;
+  top: 200px;
+  max-height: 100%;
 }
 
 .milkyway {

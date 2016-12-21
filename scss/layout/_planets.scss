@@ -5,12 +5,11 @@
       justify-content: space-around;
       justify-content: flex-start;
       align-content: center;
-      margin-top: 90px;
+      margin-top: 100px;
     }
 }
 .sun2 {
   position: relative;
-  display:inline;
   margin: auto;
   width: 600px;
   height: 600px;
@@ -25,7 +24,11 @@
   @media #{$brk-narrow}{
     width: 350px;
     height: 350px;
-    // margin: 10px;
+  }
+  @media #{$brk-wide}{
+    // margin: 50px;
+    width: 900px;
+    height: 900px;
   }
   #core2 {
     display: block;
@@ -37,6 +40,10 @@
     @media #{$brk-narrow}{
       width: 80px;
       height: 80px;
+    }
+    @media #{$brk-wide}{
+      width: 400px;
+      height: 400px;
     }
   }
 }
@@ -51,123 +58,157 @@
   @include planet;
   transition: all 2s;
   @media #{$brk-narrow}{
-    width: 100px;
-    height: 100px;
-    margin: 25px;
-
+    width: 130px;
+    height: 130px;
+    margin: 50px;
+  }
+  @media #{$brk-wide}{
+    width: 450px;
+    height: 450px;
   }
 }
 #earth {
   @extend #jupiter;
   background: #1B2336;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 30px;
-    height: 30px;
-    margin: 25px;
-
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+  }
+  @media #{$brk-wide}{
+    width: 150px;
+    height: 150px;
   }
 }
 #mercury {
   @extend #earth;
   background: #656565;
-  height: 40px;
-  width: 40px;
+  height: 25px;
+  width: 25px;
   @include rightshadow;
   @media #{$brk-narrow}{
+    flex-grow: 1;
     width: 20px;
     height: 20px;
-    margin: 25px;
+    margin: 50px;
+  }
+  @media #{$brk-wide}{
+    width: 50px;
+    height: 50px;
   }
 }
 #venus {
   @extend #mercury;
   background: #D1933C;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 20px;
-    height: 20px;
-    margin: 25px;
-
+    width: 40px;
+    height: 40px;
+    margin: 50px;
+  }
+  @media #{$brk-wide}{
+    width: 140px;
+    height: 140px;
   }
 }
 #mars {
   @extend #mercury;
   background: #AB6D46;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 20px;
-    height: 20px;
-    margin: 25px;
-
+    width: 25px;
+    height: 25px;
+    margin: 50px;
+  }
+  @media #{$brk-wide}{
+    width: 70px;
+    height: 70px;
   }
 }
 .saturn {
   position: relative;
   @media #{$brk-narrow}{
     img {
-      width: 80px;
-      height: 80px;
-      margin: 25px;
-
+      width: 100px;
+      height: 100px;
+      margin: 50px;
+    }
+  }
+  @media #{$brk-wide}{
+    img {
+      width: 300px;
+      height: 300px;
+      margin: 50px;
     }
   }
 }
 #uranus {
   @extend #mercury;
   background: #CDF3F6;
-  height: 50px;
-  width: 50px;
+  height: 120px;
+  width: 120px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 25px;
-    height: 25px;
-    margin: 25px;
-
+    width: 70px;
+    height: 70px;
+    margin: 50px;
+  }
+  @media #{$brk-wide}{
+    width: 200px;
+    height: 200px;
   }
 }
-#uranus {
+#neptune {
   @extend #mercury;
   background: #3C57DA;
-  height: 35px;
-  width: 35px;
+  height: 100px;
+  width: 100px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 15px;
-    height: 15px;
-    margin: 25px;
-
+    width: 70px;
+    height: 70px;
+    margin: 50px;
+  }
+  @media #{$brk-wide}{
+    width: 200px;
+    height: 200px;
   }
 }
 .info {
   position: absolute;
   display: none;
   top: 70%;
-  width: 50%;
+  left: 10%;
+  width: 500px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
   transition: all 2s;
   @media #{$brk-narrow}{
-    position: static;
-    width: 100%;
+    left: -30%;
+    width: 600px;
     h2 {
       font-size: 16px;
     }
   }
 }
-.planet:hover {
-  .info {
+.planet {
+  transition: all 2s;
+  &:hover {
+    transform: scale(1.2);
+    .info {
     display: block;
-  animation: fadeIn;
-  animation-name: popup;
-  animation-duration: 7s;
-  transition-timing-function: ease-in;
+    animation: fadeIn;
+    animation-name: popup;
+    animation-duration: 7s;
+    transition-timing-function: ease-in;
+  }
  }
 }

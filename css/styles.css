@@ -57,8 +57,10 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite; }
 
-#stars img {
-  position: relative; }
+#stars {
+  position: relative;
+  top: 200px;
+  max-height: 100%; }
 
 .milkyway {
   position: relative;
@@ -253,11 +255,10 @@ body {
     justify-content: space-around;
     justify-content: flex-start;
     align-content: center;
-    margin-top: 90px; } }
+    margin-top: 100px; } }
 
 .sun2 {
   position: relative;
-  display: inline;
   margin: auto;
   width: 600px;
   height: 600px;
@@ -282,6 +283,10 @@ body {
     .sun2 {
       width: 350px;
       height: 350px; } }
+  @media (min-width: 2000px) {
+    .sun2 {
+      width: 900px;
+      height: 900px; } }
   .sun2 #core2 {
     display: block;
     width: 200px;
@@ -293,8 +298,12 @@ body {
       .sun2 #core2 {
         width: 80px;
         height: 80px; } }
+    @media (min-width: 2000px) {
+      .sun2 #core2 {
+        width: 400px;
+        height: 400px; } }
 
-#jupiter, #earth, #mercury, #venus, #mars, #uranus {
+#jupiter, #earth, #mercury, #venus, #mars, #uranus, #neptune {
   position: relative;
   width: 200px;
   height: 200px;
@@ -308,107 +317,146 @@ body {
   align-items: center;
   transition: all 2s; }
   @media (max-width: 900px) {
-    #jupiter, #earth, #mercury, #venus, #mars, #uranus {
-      width: 100px;
-      height: 100px;
-      margin: 25px; } }
+    #jupiter, #earth, #mercury, #venus, #mars, #uranus, #neptune {
+      width: 130px;
+      height: 130px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    #jupiter, #earth, #mercury, #venus, #mars, #uranus, #neptune {
+      width: 450px;
+      height: 450px; } }
 
-#earth, #mercury, #venus, #mars, #uranus {
+#earth, #mercury, #venus, #mars, #uranus, #neptune {
   background: #1B2336;
+  height: 60px;
+  width: 60px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #earth, #mercury, #venus, #mars, #uranus, #neptune {
+      width: 50px;
+      height: 50px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    #earth, #mercury, #venus, #mars, #uranus, #neptune {
+      width: 150px;
+      height: 150px; } }
+
+#mercury, #venus, #mars, #uranus, #neptune {
+  background: #656565;
+  height: 25px;
+  width: 25px;
+  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 900px) {
+    #mercury, #venus, #mars, #uranus, #neptune {
+      flex-grow: 1;
+      width: 20px;
+      height: 20px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    #mercury, #venus, #mars, #uranus, #neptune {
+      width: 50px;
+      height: 50px; } }
+
+#venus {
+  background: #D1933C;
   height: 50px;
   width: 50px;
   box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
   @media (max-width: 900px) {
-    #earth, #mercury, #venus, #mars, #uranus {
-      width: 30px;
-      height: 30px;
-      margin: 25px; } }
-
-#mercury, #venus, #mars, #uranus {
-  background: #656565;
-  height: 40px;
-  width: 40px;
-  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
-  @media (max-width: 900px) {
-    #mercury, #venus, #mars, #uranus {
-      width: 20px;
-      height: 20px;
-      margin: 25px; } }
-
-#venus {
-  background: #D1933C;
-  height: 40px;
-  width: 40px;
-  box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
-  @media (max-width: 900px) {
     #venus {
-      width: 20px;
-      height: 20px;
-      margin: 25px; } }
+      width: 40px;
+      height: 40px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    #venus {
+      width: 140px;
+      height: 140px; } }
 
 #mars {
   background: #AB6D46;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
   @media (max-width: 900px) {
     #mars {
-      width: 20px;
-      height: 20px;
-      margin: 25px; } }
+      width: 25px;
+      height: 25px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    #mars {
+      width: 70px;
+      height: 70px; } }
 
 .saturn {
   position: relative; }
   @media (max-width: 900px) {
     .saturn img {
-      width: 80px;
-      height: 80px;
-      margin: 25px; } }
+      width: 100px;
+      height: 100px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    .saturn img {
+      width: 300px;
+      height: 300px;
+      margin: 50px; } }
 
 #uranus {
   background: #CDF3F6;
-  height: 50px;
-  width: 50px;
+  height: 120px;
+  width: 120px;
   box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
   @media (max-width: 900px) {
     #uranus {
-      width: 25px;
-      height: 25px;
-      margin: 25px; } }
+      width: 70px;
+      height: 70px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    #uranus {
+      width: 200px;
+      height: 200px; } }
 
-#uranus {
+#neptune {
   background: #3C57DA;
-  height: 35px;
-  width: 35px;
+  height: 100px;
+  width: 100px;
   box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
   @media (max-width: 900px) {
-    #uranus {
-      width: 15px;
-      height: 15px;
-      margin: 25px; } }
+    #neptune {
+      width: 70px;
+      height: 70px;
+      margin: 50px; } }
+  @media (min-width: 2000px) {
+    #neptune {
+      width: 200px;
+      height: 200px; } }
 
 .info {
   position: absolute;
   display: none;
   top: 70%;
-  width: 50%;
+  left: 10%;
+  width: 500px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
   transition: all 2s; }
   @media (max-width: 900px) {
     .info {
-      position: static;
-      width: 100%; }
+      left: -30%;
+      width: 600px; }
       .info h2 {
         font-size: 16px; } }
 
-.planet:hover .info {
-  display: block;
-  animation: fadeIn;
-  animation-name: popup;
-  animation-duration: 7s;
-  transition-timing-function: ease-in; }
+.planet {
+  transition: all 2s; }
+  .planet:hover {
+    transform: scale(1.2); }
+    .planet:hover .info {
+      display: block;
+      animation: fadeIn;
+      animation-name: popup;
+      animation-duration: 7s;
+      transition-timing-function: ease-in; }
 
 .navbar {
   position: absolute;
