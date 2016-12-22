@@ -1,15 +1,16 @@
 .stars {
   @media #{$brk-narrow}{
+    height: 1850px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     justify-content: flex-start;
     align-content: center;
-    margin-top: 100px;
     }
 }
 .sun2 {
   margin: auto;
+  margin-top: 90px;
   width: 600px;
   height: 600px;
   background: #ffff33;
