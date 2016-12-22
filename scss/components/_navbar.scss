@@ -27,7 +27,7 @@
     color: white;
     transition: all 0.9s;
     &:hover {
-      color: #f4424b;
+      color: $textColor;
     }
   }
   #logo {
