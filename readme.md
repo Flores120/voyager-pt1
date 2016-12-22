@@ -1,4 +1,4 @@
-#Arctic Wild#
+#Voyager#
 ###A space website for anyone to use###
 ###By Alvaro Flores###
 
