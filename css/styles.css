@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #2D042C;
+  background: url("../img/bg.png");
   background-repeat: no-repeat;
   color: white;
   font-family: 'Oswald', sans-serif; }
@@ -48,7 +49,7 @@ body {
   bottom: 0;
   width: 100%;
   z-index: 1;
-  max-height: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,10 +169,10 @@ body {
   border-radius: 100%; }
   @media (max-width: 900px) {
     #core {
-      width: 15px;
-      height: 15px;
-      top: 90px;
-      left: 87px; } }
+      width: 25px;
+      height: 25px;
+      top: 86px;
+      left: 83px; } }
 
 .earth {
   position: absolute;
@@ -202,9 +203,9 @@ body {
   justify-content: center;
   align-items: center;
   background: #ffaa80;
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -258,16 +259,15 @@ body {
     margin-top: 100px; } }
 
 .sun2 {
-  position: relative;
   margin: auto;
   width: 600px;
   height: 600px;
   background: #ffff33;
   border: solid 50px #fcfecd;
   animation: sunshine;
-  -webkit-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
@@ -283,10 +283,6 @@ body {
     .sun2 {
       width: 350px;
       height: 350px; } }
-  @media (min-width: 2000px) {
-    .sun2 {
-      width: 900px;
-      height: 900px; } }
   .sun2 #core2 {
     display: block;
     width: 200px;
@@ -298,13 +294,8 @@ body {
       .sun2 #core2 {
         width: 80px;
         height: 80px; } }
-    @media (min-width: 2000px) {
-      .sun2 #core2 {
-        width: 400px;
-        height: 400px; } }
 
 #jupiter, #earth, #mercury, #venus, #mars, #uranus, #neptune {
-  position: relative;
   width: 200px;
   height: 200px;
   background: #ffaa80;
@@ -321,10 +312,6 @@ body {
       width: 130px;
       height: 130px;
       margin: 50px; } }
-  @media (min-width: 2000px) {
-    #jupiter, #earth, #mercury, #venus, #mars, #uranus, #neptune {
-      width: 450px;
-      height: 450px; } }
 
 #earth, #mercury, #venus, #mars, #uranus, #neptune {
   background: #1B2336;
@@ -336,15 +323,12 @@ body {
       width: 50px;
       height: 50px;
       margin: 50px; } }
-  @media (min-width: 2000px) {
-    #earth, #mercury, #venus, #mars, #uranus, #neptune {
-      width: 150px;
-      height: 150px; } }
 
 #mercury, #venus, #mars, #uranus, #neptune {
   background: #656565;
   height: 25px;
   width: 25px;
+  margin-left: 60px;
   box-shadow: inset -5px -1px rgba(0, 0, 0, 0.4); }
   @media (max-width: 900px) {
     #mercury, #venus, #mars, #uranus, #neptune {
@@ -352,10 +336,6 @@ body {
       width: 20px;
       height: 20px;
       margin: 50px; } }
-  @media (min-width: 2000px) {
-    #mercury, #venus, #mars, #uranus, #neptune {
-      width: 50px;
-      height: 50px; } }
 
 #venus {
   background: #D1933C;
@@ -367,10 +347,6 @@ body {
       width: 40px;
       height: 40px;
       margin: 50px; } }
-  @media (min-width: 2000px) {
-    #venus {
-      width: 140px;
-      height: 140px; } }
 
 #mars {
   background: #AB6D46;
@@ -382,23 +358,12 @@ body {
       width: 25px;
       height: 25px;
       margin: 50px; } }
-  @media (min-width: 2000px) {
-    #mars {
-      width: 70px;
-      height: 70px; } }
 
-.saturn {
-  position: relative; }
-  @media (max-width: 900px) {
-    .saturn img {
-      width: 100px;
-      height: 100px;
-      margin: 50px; } }
-  @media (min-width: 2000px) {
-    .saturn img {
-      width: 300px;
-      height: 300px;
-      margin: 50px; } }
+@media (max-width: 900px) {
+  .saturn img {
+    width: 100px;
+    height: 100px;
+    margin: 50px; } }
 
 #uranus {
   background: #CDF3F6;
@@ -410,10 +375,6 @@ body {
       width: 70px;
       height: 70px;
       margin: 50px; } }
-  @media (min-width: 2000px) {
-    #uranus {
-      width: 200px;
-      height: 200px; } }
 
 #neptune {
   background: #3C57DA;
@@ -425,38 +386,43 @@ body {
       width: 70px;
       height: 70px;
       margin: 50px; } }
-  @media (min-width: 2000px) {
-    #neptune {
-      width: 200px;
-      height: 200px; } }
 
 .info {
-  position: absolute;
+  position: static;
   display: none;
-  top: 70%;
-  left: 10%;
-  width: 500px;
+  top: 100px;
+  left: -20px;
+  width: 600px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
-  transition: all 2s; }
+  transition: all .8s; }
+  .info h2 {
+    font-size: 18px; }
   @media (max-width: 900px) {
     .info {
-      left: -30%;
-      width: 600px; }
+      position: static; }
       .info h2 {
-        font-size: 16px; } }
+        font-size: 18px; } }
 
 .planet {
-  transition: all 2s; }
+  transition: all 2s;
+  cursor: pointer; }
   .planet:hover {
     transform: scale(1.2); }
     .planet:hover .info {
       display: block;
       animation: fadeIn;
       animation-name: popup;
-      animation-duration: 7s;
+      animation-duration: 2s;
       transition-timing-function: ease-in; }
+
+.about-container {
+  position: absolute;
+  top: 90px;
+  display: flex;
+  flex: wrap;
+  justify-content: center; }
 
 .navbar {
   position: absolute;
@@ -467,6 +433,7 @@ body {
   height: 90px;
   opacity: .01;
   position: relative;
+  font-size: 20px;
   transition: all 0.9s; }
   .navbar:hover {
     opacity: 1;
@@ -491,21 +458,5 @@ body {
     height: auto; }
     .navbar #logo img {
       width: 60%; }
-
-.button button {
-  background-color: rgba(255, 255, 255, 0.2);
-  transition: all 0.9s;
-  height: 60px;
-  width: 100px;
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-  border: none;
-  outline: none; }
-  .button button:hover {
-    opacity: 1;
-    background-color: white;
-    cursor: pointer;
-    color: #f4424b; }
 
 /*# sourceMappingURL=styles.css.map */
