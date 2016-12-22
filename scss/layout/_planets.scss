@@ -6,7 +6,7 @@
     justify-content: space-around;
     justify-content: flex-start;
     align-content: center;
-    }
+  }
 }
 .sun2 {
   margin: auto;
@@ -43,7 +43,7 @@
   height: 200px;
   background: #ffaa80;
   margin-left: 10px;
-    margin-right: 10px;
+  margin-right: 10px;
   @include rightshadow;
   @include planet;
   transition: all 2s;
@@ -64,10 +64,6 @@
     height: 50px;
     margin: 50px;
   }
-  // @media #{$brk-wide}{
-  //   width: 150px;
-  //   height: 150px;
-  // }
 }
 #mercury {
   @extend #earth;
@@ -163,15 +159,14 @@
 .planet {
   transition: all 2s;
   cursor: pointer;
-
   &:hover {
     transform: scale(1.2);
     .info {
-    display: block;
-    animation: fadeIn;
-    animation-name: popup;
-    animation-duration: 2s;
-    transition-timing-function: ease-in;
+      display: block;
+      animation: fadeIn;
+      animation-name: popup;
+      animation-duration: 2s;
+      transition-timing-function: ease-in;
+    }
   }
- }
 }

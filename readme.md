@@ -2,7 +2,7 @@
 ###A space website for anyone to use###
 ###By Alvaro Flores###
 
-###This page explores the wonders of our solar system with a look animated view###
+###This page explores the wonders of our solar system with a look that is both pleasing and fun###
 
 ##Setup/Installation Requirements##
 ###Git clone###
