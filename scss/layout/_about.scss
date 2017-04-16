@@ -2,8 +2,8 @@ footer {
   width: 100%;
   height: 200px;
   background: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0;
+  // position: absolute;
+  // top: 0;
   color: $textColor;
   display: flex;
   justify-content: center;
@@ -12,8 +12,7 @@ footer {
   flex-direction: column;
 }
 .about-container{
-  position: absolute;
-  top: 90px;
+  margin-top: 90px;
   height: 100%;
   width: 70%;
 }

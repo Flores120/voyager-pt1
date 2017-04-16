@@ -1,6 +1,7 @@
 .stars {
   @media #{$brk-narrow}{
-    height: 1850px;
+    height: 100%;
+    max-height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -11,36 +12,36 @@
 .sun2 {
   margin: auto;
   margin-top: 90px;
-  width: 600px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
   background: #ffff33;
   border: solid 50px #fcfecd;
-  animation: sunshine;
+  animation: sunshine 5s;
   @include animation-duration($speed);
   @include animation-timing-function(linear);
   @include animation-iteration-count(infinite);
   @include planet;
   transition: all 2s;
   @media #{$brk-narrow}{
-    width: 350px;
-    height: 350px;
+    width: 175px;
+    height: 175px;
   }
   #core2 {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 75px;
+    height: 75px;
     background: #fc785a;
     border-radius: 100%;
     transition: all 2s;
     @media #{$brk-narrow}{
-      width: 80px;
-      height: 80px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
 #jupiter {
-  width: 200px;
-  height: 200px;
+  width: 75px;
+  height: 75px;
   background: #ffaa80;
   margin-left: 10px;
   margin-right: 10px;
@@ -48,103 +49,105 @@
   @include planet;
   transition: all 2s;
   @media #{$brk-narrow}{
-    width: 130px;
-    height: 130px;
-    margin: 50px;
+    width: 65px;
+    height: 65px;
+    margin: 20px;
   }
 }
 #earth {
   @extend #jupiter;
   background: #1B2336;
-  height: 60px;
-  width: 60px;
+  height: 20px;
+  width: 20px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 50px;
-    height: 50px;
-    margin: 50px;
+    width: 25px;
+    height: 25px;
+    margin: 20px;
   }
 }
 #mercury {
   @extend #earth;
   background: #656565;
-  height: 25px;
-  width: 25px;
+  height: 8px;
+  width: 8px;
   margin-left: 60px;
   @include rightshadow;
   @media #{$brk-narrow}{
     flex-grow: 1;
-    width: 20px;
-    height: 20px;
-    margin: 50px;
+    width: 10px;
+    height: 10px;
+    margin: 20px;
   }
 }
 #venus {
   @extend #mercury;
   background: #D1933C;
-  height: 50px;
-  width: 50px;
+  height: 20px;
+  width: 20px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 40px;
-    height: 40px;
-    margin: 50px;
+    width: 20px;
+    height: 20px;
+    margin: 20px;
   }
 }
 #mars {
   @extend #mercury;
   background: #AB6D46;
-  height: 30px;
-  width: 30px;
+  height: 10px;
+  width: 10px;
   @include rightshadow;
   @media #{$brk-narrow}{
     width: 25px;
     height: 25px;
-    margin: 50px;
+    margin: 20px;
   }
 }
 .saturn {
   @media #{$brk-narrow}{
     img {
-      width: 100px;
-      height: 100px;
-      margin: 50px;
+      width: 40px;
+      height: 40px;
+      margin: 20px;
     }
   }
 }
 #uranus {
   @extend #mercury;
   background: #CDF3F6;
-  height: 120px;
-  width: 120px;
+  height: 50px;
+  width: 50px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 70px;
-    height: 70px;
-    margin: 50px;
+    width: 45px;
+    height: 45px;
+    margin: 20px;
   }
 }
 #neptune {
   @extend #mercury;
   background: #3C57DA;
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 40px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    width: 70px;
-    height: 70px;
-    margin: 50px;
+    width: 35px;
+    height: 35px;
+    margin: 20px;
   }
 }
 .info {
-  position: static;
-  display: none;
-  top: 100px;
-  left: -20px;
-  width: 600px;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 15px;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10px;
+  color: black;
   transition: all .8s;
   h2 {
     font-size: 18px;
@@ -160,9 +163,11 @@
   transition: all 2s;
   cursor: pointer;
   &:hover {
-    transform: scale(1.2);
+    // transform: scale(1.2);
     .info {
-      display: block;
+      visibility: visible;
+      // top: 0;
+      // left: 50%;
       animation: fadeIn;
       animation-name: popup;
       animation-duration: 2s;
