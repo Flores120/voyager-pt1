@@ -14,10 +14,10 @@ Open in Browser
 
 ## Technologies Used
 
-**HTML**
-**CSS**
-**Sass**
-**Bourbon**
+* HTML
+* CSS
+* Sass
+* Bourbon
 
 ## Contributors
 
