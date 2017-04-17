@@ -1,28 +1,28 @@
-#Voyager#
-###A space website for anyone to use###
-###By Alvaro Flores###
+# Voyager
+### A space website for anyone to use
 
-###This page explores the wonders of our solar system with a look that is both pleasing and fun###
+This page explores the wonders of our solar system with a look that is both pleasing and fun.
 
-##Setup/Installation Requirements##
-###Git clone###
-###Open in Browser###
+## Motivation
 
-##Known Bugs##
-###Currently there are no bugs###
+I was motivated on making this website after completing a similar project using Foundation. It is not as similar to the style because I wanted to put more creativity into it.
 
-##Support and contact details##
-###If there are any bugs please contact me and i will get on it as soon as possible at alvaro.flores01@gmail.com###
+## Installation/Setup
 
-##Technologies Used##
-###HTM###
-###CSS###
-###Sass###
-##Bourbon##
+Git clone
+Open in Browser
 
+#Technologies Used
 
+HTML
+CSS
+Sass
+Bourbon
 
-##License##
-###This site is licensed under MIT###
+## Contributors
 
-####Copyright (c) 2016 Alvaro Flores @Epicodus####
+Alvaro Flores
+
+## License
+
+Copyright (c) 2016 Alvaro Flores @Epicodus
