@@ -12,12 +12,12 @@ I was motivated on making this website after completing a similar project using 
 Git clone
 Open in Browser
 
-#Technologies Used
+## Technologies Used
 
-HTML
-CSS
-Sass
-Bourbon
+**HTML**
+**CSS**
+**Sass**
+**Bourbon**
 
 ## Contributors
 
