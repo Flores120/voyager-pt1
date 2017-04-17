@@ -1,7 +1,7 @@
 .container {
   position: absolute;
   top: 0;
-  height: 1200px;
+  height: 100%;
   width: 100%;
   @include paralax;
   justify-content: center;
@@ -10,6 +10,9 @@
   animation-duration: 400s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  @media #{$brk-narrow}{
+    height: 2000px;
+  }
 }
 .milkyway {
   width: 1000px;

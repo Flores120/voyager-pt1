@@ -1,7 +1,22 @@
+@media #{$brk-narrow}{
+  #jupiter,
+  #earth,
+  #mercury,
+  #venus,
+  #mars,
+  #saturn,
+  #uranus,
+  #neptune {
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+}
+
 .stars {
   @media #{$brk-narrow}{
-    height: 100%;
-    max-height: 1200px;
+    height: 1700px;
+    // max-height: 1700px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -49,9 +64,11 @@
   @include planet;
   transition: all 2s;
   @media #{$brk-narrow}{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 65px;
     height: 65px;
-    margin: 20px;
   }
 }
 #earth {
@@ -61,9 +78,11 @@
   width: 20px;
   @include rightshadow;
   @media #{$brk-narrow}{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 25px;
     height: 25px;
-    margin: 20px;
   }
 }
 #mercury {
@@ -74,10 +93,12 @@
   margin-left: 60px;
   @include rightshadow;
   @media #{$brk-narrow}{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-grow: 1;
     width: 10px;
     height: 10px;
-    margin: 20px;
   }
 }
 #venus {
@@ -87,9 +108,11 @@
   width: 20px;
   @include rightshadow;
   @media #{$brk-narrow}{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 20px;
     height: 20px;
-    margin: 20px;
   }
 }
 #mars {
@@ -98,18 +121,24 @@
   height: 10px;
   width: 10px;
   @include rightshadow;
-  @media #{$brk-narrow}{
+  @media #{$brk-narrow} {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 25px;
     height: 25px;
-    margin: 20px;
   }
 }
 .saturn {
   @media #{$brk-narrow}{
     img {
+      display: block;
+      margin: 0 auto;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
       width: 40px;
       height: 40px;
-      margin: 20px;
     }
   }
 }
@@ -120,9 +149,11 @@
   width: 50px;
   @include rightshadow;
   @media #{$brk-narrow}{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 45px;
     height: 45px;
-    margin: 20px;
   }
 }
 #neptune {
@@ -132,9 +163,10 @@
   width: 40px;
   @include rightshadow;
   @media #{$brk-narrow}{
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 35px;
     height: 35px;
-    margin: 20px;
   }
 }
 .info {

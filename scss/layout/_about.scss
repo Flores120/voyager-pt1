@@ -50,9 +50,19 @@ footer {
   }
 }
 .about-container {
-  margin-top: 90px;
+  margin-top: 130px;
   padding: 1em;
   height: 100%;
   width: 70%;
   background-color: rgba(0, 0, 0, .6);
+}
+.social {
+  ul {
+    overflow: auto;
+    margin-left: -50px;
+  }
+  li {
+    float: left;
+    margin-left: 10px;
+  }
 }
