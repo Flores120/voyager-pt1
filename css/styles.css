@@ -431,9 +431,7 @@ body {
       height: 35px; } }
 
 .info {
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
+  display: none;
   position: absolute;
   left: 0px;
   top: 40px;
@@ -454,11 +452,14 @@ body {
   transition: all 2s;
   cursor: pointer; }
   .planet:hover .info {
-    visibility: visible;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
     font-size: 18px;
     color: #3C57DA;
     animation: fadeIn;
     animation-name: popup;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
     animation-duration: 2s;
     transition-timing-function: ease-in; }
 

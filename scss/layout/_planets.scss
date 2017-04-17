@@ -170,9 +170,8 @@
   }
 }
 .info {
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
+  // visibility: hidden;
+  display: none;
   position: absolute;
   left: 0px;
   top: 40px;
@@ -195,15 +194,15 @@
   transition: all 2s;
   cursor: pointer;
   &:hover {
-    // transform: scale(1.2);
     .info {
-      visibility: visible;
-      // top: 0;
-      // left: 50%;
+      display: flex;
+      justify-content: center;
+      margin-top: -40px;
       font-size: 18px;
       color: #3C57DA;
       animation: fadeIn;
       animation-name: popup;
+      transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
       animation-duration: 2s;
       transition-timing-function: ease-in;
     }
