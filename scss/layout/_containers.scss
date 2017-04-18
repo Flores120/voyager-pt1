@@ -10,8 +10,11 @@
   animation-duration: 400s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  @media #{$brk-narrow}{
-    height: 2000px;
+}
+
+@media #{$brk-narrow}{
+.ourGalaxy {
+    height: 100%;
   }
 }
 .milkyway {

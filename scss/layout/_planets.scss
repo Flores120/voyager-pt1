@@ -1,17 +1,17 @@
-@media #{$brk-narrow}{
-  #jupiter,
-  #earth,
-  #mercury,
-  #venus,
-  #mars,
-  #saturn,
-  #uranus,
-  #neptune {
-      margin: auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
-  }
-}
+// @media #{$brk-narrow}{
+//   #jupiter,
+//   #earth,
+//   #mercury,
+//   #venus,
+//   #mars,
+//   #saturn,
+//   #uranus,
+//   #neptune {
+//       margin: auto;
+//       margin-top: 10px;
+//       margin-bottom: 10px;
+//   }
+// }
 
 .stars {
   @media #{$brk-narrow}{
@@ -38,6 +38,7 @@
   @include planet;
   transition: all 2s;
   @media #{$brk-narrow}{
+    margin-top: 150px;
     width: 175px;
     height: 175px;
   }
@@ -65,8 +66,8 @@
   transition: all 2s;
   @media #{$brk-narrow}{
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 65px;
     height: 65px;
   }
@@ -79,8 +80,8 @@
   @include rightshadow;
   @media #{$brk-narrow}{
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 25px;
     height: 25px;
   }
@@ -94,8 +95,8 @@
   @include rightshadow;
   @media #{$brk-narrow}{
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     flex-grow: 1;
     width: 10px;
     height: 10px;
@@ -109,8 +110,8 @@
   @include rightshadow;
   @media #{$brk-narrow}{
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 20px;
     height: 20px;
   }
@@ -123,8 +124,8 @@
   @include rightshadow;
   @media #{$brk-narrow} {
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 25px;
     height: 25px;
   }
@@ -135,8 +136,8 @@
       display: block;
       margin: 0 auto;
       margin: auto;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin-top: 60px;
+      margin-bottom: 60px;
       width: 40px;
       height: 40px;
     }
@@ -150,8 +151,8 @@
   @include rightshadow;
   @media #{$brk-narrow}{
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 45px;
     height: 45px;
   }
@@ -163,8 +164,8 @@
   width: 40px;
   @include rightshadow;
   @media #{$brk-narrow}{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     width: 35px;
     height: 35px;
   }
