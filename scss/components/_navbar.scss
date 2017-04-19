@@ -1,23 +1,31 @@
 .navbar {
   position: absolute;
-  top: 0;
+  top: -10px;
   left:0;
-  z-index: 101;
+  padding: 1em;
+  z-index: 200;
   width: 100%;
-  height: 90px;
+  height: 100%;
   opacity: 0;
   position: relative;
   font-size: 20px;
   transition: all 0.9s;
   &:hover {
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
+  }
+  img {
+    margin-left: 15px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
   }
   li {
     list-style: none;
-    float: right;
-    margin-right: 40px;
+    // float: right;
+    margin-right: 30px;
     margin-top: 35px;
     font-size: 20px;
   }
@@ -27,20 +35,33 @@
     transition: all 0.9s;
     &:hover {
       color: $textColor;
+      }
     }
-  }
-  #logo {
-    float: left;
-    margin-left: 20px;
-    margin-top: 10px;
-    height: auto;
-    img {
-      width: 60%;
-    }
-  }
+  // }
+  // #logo {
+  //   float: left;
+  //   margin-left: 20px;
+  //   margin-top: 10px;
+  //   height: auto;
+  //   img {
+  //     width: 60%;
+  //   }
+  // }
 }
 .navContent {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1250px;
   margin: auto;
+}
+@media #{$brk-mNarrow}{
+  .navContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    text-align: center;
+    flex-direction: column;
+  }
 }
