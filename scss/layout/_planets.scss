@@ -177,6 +177,7 @@
   left: 0px;
   top: 40px;
   width: 100%;
+  height: 130px;
   background-color: rgba(255, 255, 255, 1);
   padding: 10px;
   color: black;
@@ -191,14 +192,19 @@
     }
   }
 }
+
 .planet {
   transition: all 2s;
   cursor: pointer;
   &:hover {
+    .navbar {
+      display: none;
+    }
     .info {
       display: flex;
       justify-content: center;
-      margin-top: -40px;
+      z-index: 10;
+      margin-top: 60px;
       font-size: 18px;
       color: #3C57DA;
       animation: fadeIn;
