@@ -90,9 +90,10 @@ footer {
 }
 .content {
   img {
-    width: 40%;
-    max-width: 200px;
+    width: 60%;
+    max-width: 300px;
     float: right;
+    border: 3px solid white;
   }
 }
 .voyagerMission,
@@ -104,12 +105,15 @@ footer {
   margin-bottom: 10px;
 }
 .voyagerMission {
-  background-color: black;
+  background-color: $textColor;
   color: white;
 }
 .journey {
-  background-color: $textColor;
   color: white;
+  background-color: black;
+  p {
+    width: 100%;
+  }
 }
 .voyagerproccess {
   background-color: white;

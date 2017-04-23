@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'portico';
+  src: url("../Portico/Portico Rounded.otf"); }
+@font-face {
+  font-family: 'portico-outline';
+  src: url("../Portico/Portico Outline.otf"); }
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +16,8 @@ body {
     font-size: 18px; }
   body li {
     font-size: 18px; }
+  body h1 {
+    font-family: 'portico'; }
 
 #stars {
   z-index: -10;
@@ -520,9 +528,10 @@ footer {
   margin-left: 10px; }
 
 .content img {
-  width: 40%;
-  max-width: 200px;
-  float: right; }
+  width: 60%;
+  max-width: 300px;
+  float: right;
+  border: 3px solid white; }
 
 .voyagerMission,
 .voyagerproccess,
@@ -533,12 +542,14 @@ footer {
   margin-bottom: 10px; }
 
 .voyagerMission {
-  background-color: black;
+  background-color: #f4424b;
   color: white; }
 
 .journey {
-  background-color: #f4424b;
-  color: white; }
+  color: white;
+  background-color: black; }
+  .journey p {
+    width: 100%; }
 
 .voyagerproccess {
   background-color: white;
@@ -569,13 +580,15 @@ footer {
     list-style: none;
     margin-right: 30px;
     margin-top: 35px;
-    font-size: 20px; }
+    font-size: 24px;
+    font-family: 'portico'; }
   .navbar a {
     text-decoration: none;
     color: white;
     transition: all 0.9s; }
     .navbar a:hover {
-      color: #f4424b; }
+      color: #f4424b;
+      font-family: 'portico-outline'; }
 
 .navContent {
   display: flex;

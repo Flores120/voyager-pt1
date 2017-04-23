@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'portico';
+  src: url('../Portico/Portico Rounded.otf');
+}
+@font-face {
+  font-family: 'portico-outline';
+  src: url('../Portico/Portico Outline.otf');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +21,9 @@ body {
   background-repeat: no-repeat;
   color: white;
   font-family: 'Oswald', sans-serif;
+  h1 {
+    font-family: 'portico';
+  }
 }
 #stars  {
   z-index: -10;
