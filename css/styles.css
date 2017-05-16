@@ -611,13 +611,15 @@ footer {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer; }
-  .navbar img {
-    margin-left: 15px; }
+  .navbar #logo img {
+    margin-left: 15px;
+    width: 160px; }
   .navbar ul {
-    display: flex;
+    display: none;
     justify-content: space-around; }
   .navbar li {
     list-style: none;
+    float: left;
     margin-right: 30px;
     margin-top: 35px;
     font-size: 24px;
@@ -638,19 +640,19 @@ footer {
   max-width: 1024px;
   margin: auto; }
 
-#menu {
-  display: none; }
-  #menu img {
-    width: 80px;
-    margin-top: 10px; }
+#menu img {
+  width: 70px;
+  margin-top: 30px; }
 
 @media (max-width: 500px) {
-  .navContent ul {
-    display: none; }
+  .navbar ul {
+    margin: auto; }
 
   #menu {
     display: block;
-    margin-top: 30px; } }
+    margin-top: 30px; }
+    #menu img {
+      margin-top: -5px; } }
 #submit {
   margin-left: 3px;
   margin-top: 10px;

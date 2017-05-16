@@ -15,16 +15,19 @@
     background-color: rgba(0, 0, 0, .7);
     cursor: pointer;
   }
-  img {
-    margin-left: 15px;
+  #logo {
+    img {
+      margin-left: 15px;
+      width: 160px;
+    }
   }
   ul {
-    display: flex;
+    display: none;
     justify-content: space-around;
   }
   li {
     list-style: none;
-    // float: right;
+    float: left;
     margin-right: 30px;
     margin-top: 35px;
     font-size: 24px;
@@ -49,22 +52,22 @@
   margin: auto;
 }
 #menu {
-  display: none;
   img {
-    width: 80px;
-    margin-top: 10px;
+    width: 70px;
+    margin-top: 30px;
   }
 }
 @media #{$brk-mNarrow}{
-  .navContent {
-    // flex-direction: column;
-    // align-items: center;
+  .navbar {
     ul {
-      display: none;
+      margin: auto;
     }
   }
   #menu {
     display: block;
     margin-top: 30px;
+    img {
+      margin-top: -5px;
+    }
   }
 }
