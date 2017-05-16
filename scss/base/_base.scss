@@ -6,21 +6,21 @@
   font-family: 'portico-outline';
   src: url('../Portico/Portico Outline.otf');
 }
-
 body {
   margin: 0;
   padding: 0;
   background: #2D042C;
   background: url('../img/bg.png');
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Oswald', sans-serif;
   p {
     font-size: 18px;
   }
   li {
     font-size: 18px;
   }
-  background-repeat: no-repeat;
-  color: white;
-  font-family: 'Oswald', sans-serif;
+
   h1 {
     font-family: 'portico';
   }

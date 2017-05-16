@@ -1,22 +1,6 @@
-// @media #{$brk-narrow}{
-//   #jupiter,
-//   #earth,
-//   #mercury,
-//   #venus,
-//   #mars,
-//   #saturn,
-//   #uranus,
-//   #neptune {
-//       margin: auto;
-//       margin-top: 10px;
-//       margin-bottom: 10px;
-//   }
-// }
-
 .stars {
   @media #{$brk-narrow}{
     height: 1700px;
-    // max-height: 1700px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -171,7 +155,6 @@
   }
 }
 .info {
-  // visibility: hidden;
   display: none;
   position: absolute;
   left: 0px;

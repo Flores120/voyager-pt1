@@ -3,26 +3,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
- }
- @mixin paralax {
-   background: url('../img/stars.png');
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   width: 100%;
-   z-index: 1;
-   height: 100%;
-   display: flex;
- }
- @mixin ring {
-   border: #ffcccc solid 3px;
-   position: relative;
-   margin: auto;
-   background: rgba(0, 0 ,0, 0);
-   border-radius: 50%;
-   transition: all 2s;
- }
+}
+@mixin paralax {
+  background: url('../img/stars.png');
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+}
+@mixin ring {
+  border: #ffcccc solid 3px;
+  position: relative;
+  margin: auto;
+  background: rgba(0, 0 ,0, 0);
+  border-radius: 50%;
+  transition: all 2s;
+}
 @mixin leftshadow {
   box-shadow: inset 5px -1px rgba(0,0,0,0.4);
 }
