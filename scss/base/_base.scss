@@ -29,3 +29,8 @@ body {
   z-index: -10;
   max-height: 1000px;
 }
+@media #{$brk-mNarrow}{
+  body {
+    max-width: 400px;
+  }
+}

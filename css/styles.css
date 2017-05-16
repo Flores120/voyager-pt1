@@ -1,3 +1,25 @@
+@keyframes paralax {
+  from {
+    background-position: 4% 1%; }
+  to {
+    background-position: 800% 300%; } }
+@keyframes fadIn {
+  0% {
+    opacity: 0;
+    zoom: 0; }
+  100% {
+    opacity: 1;
+    zoom: 110%; } }
+@keyframes sunshine {
+  from {
+    border: solid 10px #fcfecd; }
+  to {
+    border: solid 20px #ffffff; } }
+@keyframes popup {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 @font-face {
   font-family: 'portico';
   src: url("../Portico/Portico Rounded.otf"); }
@@ -23,28 +45,9 @@ body {
   z-index: -10;
   max-height: 1000px; }
 
-@keyframes paralax {
-  from {
-    background-position: 4% 1%; }
-  to {
-    background-position: 800% 300%; } }
-@keyframes fadIn {
-  0% {
-    opacity: 0;
-    zoom: 0; }
-  100% {
-    opacity: 1;
-    zoom: 110%; } }
-@keyframes sunshine {
-  from {
-    border: solid 10px #fcfecd; }
-  to {
-    border: solid 20px #ffffff; } }
-@keyframes popup {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+@media (max-width: 500px) {
+  body {
+    max-width: 400px; } }
 .container {
   position: absolute;
   top: 0;
@@ -594,7 +597,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1024px;
   margin: auto; }
 
 @media (max-width: 500px) {
