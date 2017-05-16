@@ -601,10 +601,12 @@ footer {
   .navContent {
     flex-direction: column;
     align-items: center; }
-
-  ul {
-    text-align: center;
-    flex-direction: column; } }
+    .navContent ul {
+      display: none; }
+    .navContent:hover ul {
+      display: flex;
+      text-align: center;
+      flex-direction: column; } }
 #submit {
   margin-left: 3px;
   margin-top: 10px;

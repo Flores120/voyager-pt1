@@ -51,9 +51,15 @@
   .navContent {
     flex-direction: column;
     align-items: center;
-  }
-  ul {
-    text-align: center;
-    flex-direction: column;
+    ul {
+      display: none;
+    }
+    &:hover{
+      ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+      }
+    }
   }
 }
