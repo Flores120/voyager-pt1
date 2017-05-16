@@ -25,6 +25,12 @@
     justify-content: center;
     width: 500px;
     height: 500px;
+    margin-top: 10em;
+  }
+  @media #{$brk-mNarrow} {
+    margin-top: 15em;
+    width: 300px;
+    height: 300px;
   }
 }
 .ring {
@@ -38,6 +44,10 @@
     height: 400px;
     margin-top: 50px;
   }
+  @media #{$brk-mNarrow} {
+    width: 200px;
+    height: 200px;
+  }
 }
 .ring2 {
   width: 600px;
@@ -50,6 +60,10 @@
     height: 300px;
     margin-top: 50px;
   }
+  @media #{$brk-mNarrow} {
+    width: 100px;
+    height: 100px;
+  }
 }
 .ring3 {
   width: 500px;
@@ -61,6 +75,11 @@
     width: 200px;
     height: 200px;
     margin-top: 50px;
+  }
+  @media #{$brk-mNarrow} {
+    top: -27px;
+    width: 50px;
+    height: 50px;
   }
 }
 .sunT {
@@ -78,6 +97,12 @@
   	height: 35px;
     top: 114px;
     left: 60px;
+  }
+  @media #{$brk-mNarrow} {
+    width: 50px;
+    height: 25px;
+    top: 48px;
+    left: -3px;
   }
 }
 .sunB{
@@ -97,6 +122,13 @@
     bottom: 60px;
     left: 60px;
   }
+  @media #{$brk-mNarrow} {
+    width: 50px;
+    height: 25px;
+    bottom: -3px;
+    left: -3px;
+    z-index: 1;
+  }
 }
 #core {
   position: absolute;
@@ -111,6 +143,11 @@
   	height: 25px;
     top: 86px;
     left: 83px;
+  }
+  @media #{$brk-mNarrow}{
+    top: 10px;
+    left: 9px;
+    z-index: 2;
   }
 }
 .earth {

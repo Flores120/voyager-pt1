@@ -43,23 +43,28 @@
 .navContent {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1024px;
   margin: auto;
 }
+#menu {
+  display: none;
+  img {
+    width: 80px;
+    margin-top: 10px;
+  }
+}
 @media #{$brk-mNarrow}{
   .navContent {
-    flex-direction: column;
-    align-items: center;
+    // flex-direction: column;
+    // align-items: center;
     ul {
       display: none;
     }
-    &:hover{
-      ul {
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-      }
-    }
+  }
+  #menu {
+    display: block;
+    margin-top: 30px;
   }
 }
