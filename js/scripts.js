@@ -1,3 +1,5 @@
+var filterVal = 'brightness(.4)';
+
 $(document).ready(function(){
   $('#alert-click').show(3000);
     $("#menu").click(function(){
