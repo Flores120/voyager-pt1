@@ -506,6 +506,8 @@ footer {
 
 .footer {
   width: 100%;
+  max-width: 1024px;
+  margin: auto;
   padding: 1em;
   color: #f4424b;
   display: flex;
