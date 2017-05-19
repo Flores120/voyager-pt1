@@ -551,6 +551,7 @@ footer {
 .about-container {
   display: block;
   width: 100%;
+  max-width: 1024px;
   margin: auto; }
   .about-container h1 {
     text-align: center; }
